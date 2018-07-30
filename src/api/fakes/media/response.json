@@ -1,0 +1,33 @@
+{
+    "page": 1,
+    "size": 3,
+    "filters": [],
+    "sorting": [],
+    "total": 3,
+    "results": [
+        {
+            "title": "Text",
+            "desc": "image",
+            "img": "<img src=\"http://wiwr.org/_images/pages/story/story_main1.jpg\" />",
+            "type": 1,
+            "date_created": "2018-03-31T12:12:000Z",
+            "status": true
+        },
+        {
+            "title": "Text-2",
+            "desc": "image",
+            "img": "<img src=\"http://wiwr.org/_images/pages/story/story_main1.jpg\" />",
+            "type": 1,
+            "date_created": "2018-02-28T11:12:030Z",
+            "status": true
+        },
+        {
+            "title": "Text-3",
+            "desc": "image",
+            "img": "<img src=\"http://wiwr.org/_images/pages/story/story_main1.jpg\" />",
+            "type": 1,
+            "date_created": "2017-02-28T11:12:030Z",
+            "status": false
+        }
+    ]   
+}

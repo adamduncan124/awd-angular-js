@@ -1,0 +1,8 @@
+.overlay{top: 0; left: 0; position: fixed; width: 100%; height: 100%; background-color: #000000; opacity: 0.5; filter: alpha(opacity=50); z-index: 1000;}
+.popup{top: 0; left: 0; position: absolute; z-index: 1001; width: 100%;}
+.popup-header{position: fixed; width: 100%;background-color: #cccccc;padding: 10px;border-bottom: solid 1px #999999;}
+.popup-header h3{margin: 0;padding: 0;font-size: 1em;color: #333333;display: block;}
+.popup-header span{display: block;float: right;font-size: .8em;}
+.popup-header a{cursor: pointer;}
+.popup-content {margin-top: 30px; width: inherit; margin-left: auto; margin-right: auto; }
+.popup-hide{display: none;}

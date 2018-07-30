@@ -1,0 +1,47 @@
+{
+    "page": 1,
+    "size": 3,
+    "filters": [],
+    "sorting": [
+        {
+            "name": "test1",
+            "table": null,
+            "directionAsc": false
+        },
+        {
+            "name": "test2",
+            "table": null,
+            "directionAsc": true
+        }
+    ],
+    "total": 3,
+    "results": [
+        {
+            "test1": "Text",
+            "test2": "Text Large",
+            "test3": "<span><b>html</b> here</span>",
+            "test4": 1,
+            "test5": "2018-03-31T12:12:000Z",
+            "test6": true,
+            "test7": 12.12
+        },
+        {
+            "test1": "Text-2",
+            "test2": "Text Large 2",
+            "test3": "<span><b>html</b> here more</span>",
+            "test4": 2,
+            "test5": "2018-02-28T11:12:030Z",
+            "test6": true,
+            "test7": 13.13
+        },
+        {
+            "test1": "Text-3",
+            "test2": "Text Large 3",
+            "test3": "<span><b>html</b> here yoo</span>",
+            "test4": 3,
+            "test5": "2017-02-28T11:12:030Z",
+            "test6": false,
+            "test7": 15.25
+        }
+    ]   
+}

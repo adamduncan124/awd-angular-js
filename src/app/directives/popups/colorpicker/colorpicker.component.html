@@ -1,0 +1,7 @@
+here colors!
+<div style="max-width: 300px;">
+  <div *ngFor="let h of hexList" 
+  style="float: left; height: 25px; width: 25px;" 
+  [style.backgroundColor]="h"
+  (click)="onClick(h)"></div>
+</div>

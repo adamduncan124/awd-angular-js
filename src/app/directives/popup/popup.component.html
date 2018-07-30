@@ -1,0 +1,13 @@
+<div class="{{show ? 'overlay' : 'popup-hide'}}" [style.height.px]="boHeight"></div>
+<div class="{{show ? 'popup' : 'popup-hide'}}">
+  <div class="popup-header">
+    <span class="popup-header-close">
+       <a (click)="onCloseClicked()">Close (X)</a>
+    </span>
+    <h3 class="popup-header-title">{{active ? active.htmlTitle : ""}}</h3>    
+  </div>
+  <div class="popup-content">
+    <ng-template popup-host></ng-template>
+  </div>  
+</div>
+Y

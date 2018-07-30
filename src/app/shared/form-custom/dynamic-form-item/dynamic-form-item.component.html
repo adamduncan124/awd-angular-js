@@ -1,0 +1,67 @@
+<div [formGroup]="form" class='awd-form-item'>
+    <label [attr.for]="formItem.name">{{formItem.label}}</label>
+    <span class="errorMessage" *ngIf="isRequired">*</span>
+    <span class="errorMessage" *ngIf="!isValid && saveShowExtraValidation">{{formItem.label}} is required</span>
+   
+    <div [ngSwitch]="formItem.controlType">
+   
+      <input *ngSwitchCase="'textbox'" [formControlName]="formItem.name"
+              [id]="formItem.name" class='form-control' [type]="formItem.type" [value]="formItem.value" />
+   
+      <select *ngSwitchCase="'dropdown'" [id]="formItem.name" class='form-control' [formControlName]="formItem.name">
+        <option *ngFor="let opt of formItem.options" [value]="opt.name">{{opt.value}}</option>
+      </select>
+      
+      <div *ngSwitchCase="'richtext'" class='awd-richtext'>
+        <div ng-show="formItem.buttonType && formItem.buttonType!=2 && !formItem.isReadOnly" class='rich-bg menu-nav' id="{{ 'buttons-' + formItem.name }}">
+            <div *ngFor="let button of formItem.buttons"  
+              ng-hide="formItem.buttonType == 0 && !button.limited">
+
+              <span [ngSwitch]="button.type">
+                  <div *ngSwitchCase="'font-family'" class='select'>
+                    <select id="{{ 'awd-fontname' + formItem.name }}"
+                      (change)="formItem.SetFontName(this.id);">
+                      <option value="" selected="true">[Font]</option>
+						          <option value="Arial, Helvetica, sans-serif">Arial</option>
+						          <option value="Courier New, Courier, mono">Courier New</option>
+						          <option value="Times New Roman, Times, serif">Times New Roman</option>
+						          <option value="Verdana, Arial, Helvetica, sans-serif">Verdana</option>
+                    </select>
+                  </div>
+
+                  <div *ngSwitchCase="'font-size'" class='select'>
+                    <select unslectable='on' id="{{ 'awd-fontsize' + formItem.name }}"
+                      (change)="formItem.SetFontSize(this.id);">
+                      <option value="">[Size]</option>");
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                  </select>                    
+                  </div>
+
+                  <a *ngSwitchCase="'image-button'" id="{{ 'awd-buttonimg' + formItem.name }}" (click)="ExecuteButtonEvent(button.action);">
+                      <img src="{{ 'http://pmt.duncanbs.com/awd/framework/images/' + button.action + '.gif' }}" [title]="button.desc" [alt]="button.desc" />
+                  </a>
+              </span>
+            </div>
+            <span class='last'></span>
+        </div>
+        <iframe id="{{ formItem.name + '_frame' }}"
+          name="{{ formItem.name + '_frame' }}"
+          style='width: 100%; height: 800px;'
+          src='' allowfullscreen="true" (blur)="formItem.SaveToHidden();"></iframe>
+        <input type="hidden" id="{{ 'hdn_' + formItem.name }}" [formControlName]="formItem.name" 
+            [value]="formItem.value" />
+        <div ng-hide="formItem.isReadOnly" class='rich-bg status-area code-behind'>
+          <a (click)="formItem.ToggleCodeBehindMode();"
+             id="{{ formItem.name + '_toggleLink' }}">View Code Behind</a>
+        </div>
+      </div>
+
+    </div>     
+
+  </div>

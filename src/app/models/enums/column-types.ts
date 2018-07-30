@@ -1,0 +1,1 @@
+enum ColumnTypes { varchar, varcharbig, varbinary, int, date, bool, decimal }

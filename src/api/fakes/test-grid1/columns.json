@@ -1,0 +1,58 @@
+[
+    {
+        "name": "test1",
+        "columnType": 0,
+        "order": 1,
+        "display": "Test 1",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "test2",
+        "columnType": 1,
+        "order": 2,
+        "display": "Test 2",
+        "show": true,
+        "sortable": false
+    },
+    {
+        "name": "test3",
+        "columnType": 2,
+        "order": 3,
+        "display": "Test 3",
+        "show": true,
+        "sortable": false
+    },
+    {
+        "name": "test4",
+        "columnType": 3,
+        "order": 4,
+        "display": "Test 4",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "test5",
+        "columnType": 4,
+        "order": 5,
+        "display": "Test 5",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "test6",
+        "columnType": 5,
+        "order": 6,
+        "display": "Test 6",
+        "show": false,
+        "sortable": true
+    },
+    {
+        "name": "test7",
+        "columnType": 6,
+        "order": 7,
+        "display": "Test 7",
+        "show": true,
+        "sortable": true
+    }
+]

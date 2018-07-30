@@ -1,0 +1,42 @@
+[
+    {
+        "name": "date",
+        "columnType": 4,
+        "order": 1,
+        "display": "Date",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "title",
+        "columnType": 0,
+        "order": 2,
+        "display": "Title",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "description",
+        "columnType": 0,
+        "order": 3,
+        "display": "Desc",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "location",
+        "columnType": 0,
+        "order": 4,
+        "display": "Location",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "venue",
+        "columnType": 0,
+        "order": 2,
+        "display": "Venue",
+        "show": true,
+        "sortable": true
+    }
+]

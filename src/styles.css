@@ -1,0 +1,15 @@
+@import '~font-awesome/css/font-awesome.css';
+
+a{cursor: pointer;}
+
+/* You can add global styles to this file, and also import other style files */
+.awd-nav .hide{display: none;}
+.awd-nav .awd-mobile-icon{display: block; width: 50px;float: right;border: solid 1px #77787b;margin-right: 30px;margin-top: 25px;cursor: pointer;}
+.awd-nav .awd-mobile-icon a{ display: block;padding-top: 10px;}
+.awd-nav .awd-mobile-icon a:link{ background-color: #ffffff;}
+.awd-nav .awd-mobile-icon a:visited{ background-color: #ffffff;}
+.awd-nav .awd-mobile-icon a:hover{ background-color: #cccccc;}
+.awd-nav .awd-mobile-icon .bar{ display: block;border-top: solid 1px #77787b;margin-left: 10px;margin-right: 10px;height: 10px;}
+
+.awd-nav .desktop-view{}
+.awd-nav .mobile-view{} 

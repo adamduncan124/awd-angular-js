@@ -1,0 +1,3 @@
+.awd-form{width: 95%; min-width: 500px; margin-left: auto; margin-right: auto;}
+.awd-form-buttons{ text-aligh: right; padding: 10px; }
+.awd-form-buttons input, .awd-form-buttons button{ margin: 5px; padding: 5px; padding-left: 20px; padding-right: 20px; text-align: right; cursor: pointer; }

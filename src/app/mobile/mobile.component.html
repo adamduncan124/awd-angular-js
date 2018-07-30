@@ -1,0 +1,18 @@
+<nav class="awd-nav" *ngIf="showNavBar && navigation && navigation.length">
+  <div [class]="navMobileClass">
+    <a (click)="onMobileToggle()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+  </div>
+  <div>
+    <ul [class]="navLinksClass" ng-show="showNavLinks" [@toggleHeight]="navLinksState">
+      <li *ngFor="let navItem of navigation">
+        <a [href]="navItem.htmlHref"
+          target="{{ navItem.htmlTarget == null ? '_self' : navItem.htmlTarget }}"
+        >{{ navItem.htmlInner }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

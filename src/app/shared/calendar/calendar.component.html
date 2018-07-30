@@ -1,0 +1,38 @@
+<table cellspacing="0" cellpadding="0" border="0" class="calendar">
+    <thead>
+      <tr>
+        <th class="day-heading" *ngFor="let heading of headings">
+          {{ heading }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let blockList of blockLists">
+          <!-- *ngSwitchCase="month"  [ngSwitch]="format" --> 
+          <td *ngFor="let block of blockList.blocks"
+              class="{{ block.isBlank ? 'day day-blank' : 'day' }}">
+              <h4>{{ block.displayTitle }}</h4>
+              <div *ngFor="let item of block.items">
+                <a href="#">{{ item.date | date: 'MM/dd/yyyy'}} {{ item.title }}</a>
+              </div>
+          </td> 
+
+          <!--<td *ngSwitchCase="event" *ngFor="let block of blockList.blocks">
+              <div *ngFor="let item of block.items" class="event-item">
+                  <div class="event-date">
+                    <div class="event-month">{{ item.date | date: 'MMM' }}</div>
+                    <div class="event-day">{{ item.date | date: 'dd' }}</div>
+                    <div class="event-time">{{ item.date | date: 'h:mm a' }}</div>
+                  </div>
+                  <div class="event-location">
+                    <h4>{{ item.location }}</h4>
+                  </div>
+                  <div class="event-venue">
+                    <h4>{{ item.venue }}</h4>
+                  </div>
+                  <div class="event-actions">View Details</div>
+                </div>
+          </td>-->
+        </tr>
+    </tbody>  
+</table>

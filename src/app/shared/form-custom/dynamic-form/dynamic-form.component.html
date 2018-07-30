@@ -1,0 +1,17 @@
+<div class="awd-form">
+    <form (ngSubmit)="SubmitClick()" [formGroup]="form">
+   
+      <div *ngFor="let formItem of formItems" class="form-row">
+        <app-dynamic-form-item [extraValidation]="extraValidation" [formItem]="formItem" [form]="form"></app-dynamic-form-item>
+      </div>
+   
+      <div class="awd-form-buttons">
+        <button type="submit" [disabled]="!form.valid">{{saveText}}</button>
+        <button type="button" (click)="CancelClick()">{{cancelText}}</button>
+      </div>
+    </form>
+   
+    <div *ngIf="payLoad" class="form-row">
+      <strong>Saved the following values</strong><br>{{payLoad}}
+    </div>
+  </div>

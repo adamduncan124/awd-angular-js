@@ -1,0 +1,42 @@
+[
+    {
+        "name": "title",
+        "columnType": 0,
+        "order": 1,
+        "display": "Title",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "desc",
+        "columnType": 1,
+        "order": 2,
+        "display": "Desc",
+        "show": true,
+        "sortable": false
+    },
+    {
+        "name": "img",
+        "columnType": 2,
+        "order": 3,
+        "display": "Test 3",
+        "show": true,
+        "sortable": false
+    },
+    {
+        "name": "type",
+        "columnType": 3,
+        "order": 4,
+        "display": "Type",
+        "show": true,
+        "sortable": true
+    },
+    {
+        "name": "date-created",
+        "columnType": 4,
+        "order": 5,
+        "display": "Create Date",
+        "show": true,
+        "sortable": true
+    }
+]

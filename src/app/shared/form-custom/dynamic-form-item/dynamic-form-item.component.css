@@ -1,0 +1,23 @@
+.awd-form-item{margin-top: 15px;}
+.awd-form-item label{margin:5px; font-weight: bold; font-size: 1em;}
+.awd-form-item div {margin-top: 5px;}
+.awd-form-item div .form-control{ width: 98%; padding: 10px; font-size: .9em; border: solid 1px #cccccc; }
+
+.awd-form-item .errorMessage{ padding-right: 10px; color: #990000; }
+
+.awd-richtext{border: solid 1px #d1d1d1; width: 100%;}
+.awd-richtext iframe{border: none;}
+.awd-richtext .rich-bg{background-color: #f8f8f8; padding: 10px; font-family: Arial, San-Serif;}
+.awd-richtext .menu-nav{border-bottom: solid 1px #d1d1d1;}
+.awd-richtext .menu-nav a{display: block; float: left;}
+.awd-richtext .menu-nav a:hover{background-color: #e8e8e8;}
+.awd-richtext .menu-nav .select{display: block; float: left;}
+.awd-richtext .menu-nav select{font-size: .8em;}
+.awd-richtext .menu-nav .last{clear: left;display: block;width: 1px;height: 1px;}
+.awd-richtext .status-area{border-top: solid 1px #d1d1d1;}
+.awd-richtext .code-behind{text-align: right; display: block;}
+.awd-richtext .code-behind a{color: #999999; font-size: .8em; cursor: pointer;}
+.awd-richtext .code-behind a:hover{text-decoration: none;}
+
+.color-picker{width: 300px; margin-top: 60px; margin-left: auto; margin-right: auto;background-color: #ffffff;}
+.media-picker{width: 300px; height: 300px; margin-top: 60px; margin-left: auto; margin-right: auto;background-color: #ffffff;}

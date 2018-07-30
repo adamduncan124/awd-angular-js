@@ -1,0 +1,14 @@
+.grid{ width: 100%; border-left: solid 1px #999999; border-top: solid 1px #999999; font-size: .9em;}
+.grid .grid-heading{ padding: 10px; background-color: #cccccc; color: #333333; border-right: solid 1px #999999; border-bottom: solid 1px #999999 }
+.grid .grid-result{ padding: 10px; color: #333333; border-right: solid 1px #999999; border-bottom: solid 1px #999999 }
+.grid span.resizer {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 8px;
+    height: 100%;
+    padding: 0;
+    cursor: col-resize;
+    border: 1px solid transparent;
+}

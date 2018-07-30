@@ -1,0 +1,30 @@
+{
+    "page": 1,
+    "size": 3,
+    "filters": [],
+    "sorting": [],
+    "total": 3,
+    "results": [
+        {
+            "date": "2018-03-31T12:12:000Z",
+            "title": "Test Title",
+            "description": "<span><b>html</b> here</span>",
+            "location": "Location 1",
+            "venue": "Venue 1"
+        },
+        {
+            "date": "2018-04-15T12:12:000Z",
+            "title": "Test Title 2",
+            "description": "<span><b>html</b> here</span>",
+            "location": "Location 2",
+            "venue": "Venue 2"
+        },
+        {
+            "date": "2018-04-30T12:12:000Z",
+            "title": "Test Title 3",
+            "description": "<span><b>html</b> here</span>",
+            "location": "Location 3",
+            "venue": "Venue 3"
+        }
+    ]   
+}

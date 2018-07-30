@@ -1,0 +1,30 @@
+<a (click)="toggle()">Toggle State</a>
+
+<table [@visibilityChanged]="visiblityState" cellspacing="0" cellpadding="0" border="0" class="grid">
+    <thead>
+      <tr>
+        <th *ngFor="let column of columns"
+          ng-show="column.show" (click)="sortToggle(column)"
+          class="{{ column.sortable ? 'grid-heading sortable' : 'grid-heading' }}">
+          {{ column.display }}
+          <span [ngSwitch]="currentSort(column)" *ngIf="column.sortable">
+            <i *ngSwitchCase="1" class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+            <i *ngSwitchCase="2" class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+            <i *ngSwitchDefault class="fa fa-arrows-v" aria-hidden="true"></i>
+          </span>
+          <span class="column-resize" (mousedown)="onResize($event)"></span>
+        </th>
+        <th *ngIf="showOptions" class="grid-heading">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let result of results">
+            <td *ngFor="let column of columns" ng-show="column.show" class="grid-result">
+                {{ result[column.name] }}
+            </td> 
+            <td class="grid-result" *ngIf="showOptions">
+              <a href="{{ BuildOptionHref(result) }}">Edit</a>
+            </td>
+          </tr>
+    </tbody>  
+</table>
